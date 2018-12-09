@@ -1,0 +1,6 @@
+framework module Pods_SMSOTP {
+  umbrella header "Pods-SMSOTP-umbrella.h"
+
+  export *
+  module * { export * }
+}

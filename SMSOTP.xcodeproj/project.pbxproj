@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45AC53B9C60F0D6807978DDD /* Pods_SMSOTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF679871AA3A97B55081E22D /* Pods_SMSOTP.framework */; };
+		B908FE0021BCD7E800454CC3 /* SMSCodeChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B908FDFF21BCD7E800454CC3 /* SMSCodeChallengeHandler.swift */; };
+		B908FE0221BCF4C300454CC3 /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = B908FE0121BCF4C300454CC3 /* mfpclient.plist */; };
 		B9A5075E21BCA7C800B66FC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A5075D21BCA7C800B66FC2 /* AppDelegate.swift */; };
-		B9A5076021BCA7C800B66FC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A5075F21BCA7C800B66FC2 /* ViewController.swift */; };
+		B9A5076021BCA7C800B66FC2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A5075F21BCA7C800B66FC2 /* MainViewController.swift */; };
 		B9A5076321BCA7C800B66FC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A5076121BCA7C800B66FC2 /* Main.storyboard */; };
 		B9A5076521BCA7CA00B66FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9A5076421BCA7CA00B66FC2 /* Assets.xcassets */; };
 		B9A5076821BCA7CA00B66FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A5076621BCA7CA00B66FC2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F091527E54E615B4150CCC9 /* Pods-SMSOTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSOTP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMSOTP/Pods-SMSOTP.debug.xcconfig"; sourceTree = "<group>"; };
+		B908FDFF21BCD7E800454CC3 /* SMSCodeChallengeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeChallengeHandler.swift; sourceTree = "<group>"; };
+		B908FE0121BCF4C300454CC3 /* mfpclient.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
 		B9A5075A21BCA7C800B66FC2 /* SMSOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A5075D21BCA7C800B66FC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9A5075F21BCA7C800B66FC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9A5075F21BCA7C800B66FC2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B9A5076221BCA7C800B66FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9A5076421BCA7CA00B66FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9A5076721BCA7CA00B66FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9A5076921BCA7CA00B66FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF679871AA3A97B55081E22D /* Pods_SMSOTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMSOTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42706B2A460EDE91F72AB5B /* Pods-SMSOTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMSOTP.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMSOTP/Pods-SMSOTP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AC53B9C60F0D6807978DDD /* Pods_SMSOTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026FBDC3CE91FE77C52174E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F091527E54E615B4150CCC9 /* Pods-SMSOTP.debug.xcconfig */,
+				F42706B2A460EDE91F72AB5B /* Pods-SMSOTP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50E8FDE92A60F2FD0B8CA1A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF679871AA3A97B55081E22D /* Pods_SMSOTP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B9A5075121BCA7C800B66FC2 = {
 			isa = PBXGroup;
 			children = (
 				B9A5075C21BCA7C800B66FC2 /* SMSOTP */,
 				B9A5075B21BCA7C800B66FC2 /* Products */,
+				026FBDC3CE91FE77C52174E4 /* Pods */,
+				50E8FDE92A60F2FD0B8CA1A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +82,14 @@
 		B9A5075C21BCA7C800B66FC2 /* SMSOTP */ = {
 			isa = PBXGroup;
 			children = (
+				B9A5076921BCA7CA00B66FC2 /* Info.plist */,
 				B9A5075D21BCA7C800B66FC2 /* AppDelegate.swift */,
-				B9A5075F21BCA7C800B66FC2 /* ViewController.swift */,
-				B9A5076121BCA7C800B66FC2 /* Main.storyboard */,
+				B9A5075F21BCA7C800B66FC2 /* MainViewController.swift */,
+				B908FDFF21BCD7E800454CC3 /* SMSCodeChallengeHandler.swift */,
 				B9A5076421BCA7CA00B66FC2 /* Assets.xcassets */,
 				B9A5076621BCA7CA00B66FC2 /* LaunchScreen.storyboard */,
-				B9A5076921BCA7CA00B66FC2 /* Info.plist */,
+				B9A5076121BCA7C800B66FC2 /* Main.storyboard */,
+				B908FE0121BCF4C300454CC3 /* mfpclient.plist */,
 			);
 			path = SMSOTP;
 			sourceTree = "<group>";
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9A5076C21BCA7CA00B66FC2 /* Build configuration list for PBXNativeTarget "SMSOTP" */;
 			buildPhases = (
+				11E75317A09D195430CEBBAC /* [CP] Check Pods Manifest.lock */,
 				B9A5075621BCA7C800B66FC2 /* Sources */,
 				B9A5075721BCA7C800B66FC2 /* Frameworks */,
 				B9A5075821BCA7C800B66FC2 /* Resources */,
+				52602F2887CAAEA6CF4A8DC9 /* [CP] Embed Pods Frameworks */,
+				FBE49EB4911B7C52E95376D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,17 +158,88 @@
 				B9A5076821BCA7CA00B66FC2 /* LaunchScreen.storyboard in Resources */,
 				B9A5076521BCA7CA00B66FC2 /* Assets.xcassets in Resources */,
 				B9A5076321BCA7C800B66FC2 /* Main.storyboard in Resources */,
+				B908FE0221BCF4C300454CC3 /* mfpclient.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11E75317A09D195430CEBBAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMSOTP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52602F2887CAAEA6CF4A8DC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SMSOTP/Pods-SMSOTP-frameworks.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks/IBMMobileFirstPlatformFoundation.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBMMobileFirstPlatformFoundation.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SMSOTP/Pods-SMSOTP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE49EB4911B7C52E95376D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SMSOTP/Pods-SMSOTP-resources.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SMSOTP/Pods-SMSOTP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B9A5075621BCA7C800B66FC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9A5076021BCA7C800B66FC2 /* ViewController.swift in Sources */,
+				B9A5076021BCA7C800B66FC2 /* MainViewController.swift in Sources */,
+				B908FE0021BCD7E800454CC3 /* SMSCodeChallengeHandler.swift in Sources */,
 				B9A5075E21BCA7C800B66FC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +384,7 @@
 		};
 		B9A5076D21BCA7CA00B66FC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F091527E54E615B4150CCC9 /* Pods-SMSOTP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +403,7 @@
 		};
 		B9A5076E21BCA7CA00B66FC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F42706B2A460EDE91F72AB5B /* Pods-SMSOTP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
